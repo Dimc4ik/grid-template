@@ -1,0 +1,297 @@
+/*Global styles*/
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0px;
+    font-size: 14px;
+    font-family: LatoBlack, Helvetica, Arial, sans-serif;
+}
+
+.d-flex{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.text-upper{
+    text-transform: uppercase;
+}
+
+.text-center{
+    text-align: center;
+}
+/*End of Global styles*/
+/*Grid styles*/
+
+
+.header{ grid-area: header; }
+main { grid-area: main; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header '
+    'main'
+    'footer';
+    grid-gap: 10px;
+    background-color: #f93027;
+    padding: 0px;
+    margin: 0;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/*End of Grid styles*/
+/*Header styles*/
+.header{
+    background: url(../img/BG-Rays-Spectrum-Wallpaper.jpg);
+    background-size:  cover;
+    height: 100vh;
+}
+
+.main-logo{
+    width:  106px;
+    height: 36px;
+    fill: #fff;
+    background: #e23e3e;
+    padding: 10px 28px;
+}
+
+.header__nav{
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #f93027 2px solid;
+    min-height: 55px;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.22);
+}
+
+.nav{
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.nav li{
+    list-style:none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+}
+
+.nav li:hover{
+    background: rgba(255, 255, 255, 0.6); 
+}
+
+.nav li:nth-child(5) .nav__link::after, 
+.nav li:nth-child(6) .nav__link::after,
+.nav li:nth-child(7) .nav__link::after{
+    content: "\f107";
+    font-family: 'FontAwesome';
+    text-decoration: inherit;
+    color: #000;
+    margin-left: 5px;
+}
+
+.nav__link{
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.nav__link:hover{
+    color: #646464;
+}
+.nav__sub{
+    display: none;
+    position: absolute;
+    left: 10%;
+    list-style: none;
+    margin-left: -3px;
+    padding: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.nav__sub li {
+    width: 150px;
+    height: 90px;
+    margin: 15px;
+    background: #fff;
+    cursor: pointer;
+    line-height: 90px;
+}
+
+.nav__sub li a{
+    background: #fff;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.nav li:hover > .nav__sub{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6); 
+    border: solid 3px #fff;
+    border-top: 0;
+    margin: 0 auto;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+    box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.nav__sub li a{
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+.header__input-wrap{
+    width: 168px;
+    height: 55px;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.header__input{
+    width: 168px;
+    height: 30px;
+    padding: 1px 26px 0 4px;
+    border: none;
+}
+
+.header__search{
+    color: #f93027;
+    font-weight: bold;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: -30px;
+}
+
+.compass, .subscribe {
+    min-height: 55px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #f93027;
+    box-sizing: border-box;
+}
+
+.compass__text, .subscribe__text{
+    margin: 0px;
+}
+
+.header__search:hover{
+    color: #d0827e;
+}
+
+.header__search:active{
+    color: #2f1110;
+}
+
+.header__btn-down{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(249, 48, 39, 0.3);
+    border: none;
+    border: 3px solid #f93027;
+    margin-left: calc(50vw - 25px);
+    margin-top: calc(90vh - 100px);
+    cursor: pointer;
+    color: #f93027;
+    outline: none;
+}
+
+.header__btn-down:hover{
+    background: #fff;
+    transition: 1s;
+}
+/*End Header styles*/
+
+/*Main styles*/
+.main__item1{ 
+    grid-area: main__item1;
+    background: #a36868;
+    margin: 10px;
+}
+
+.main__item2{ 
+    grid-area: main__item2;
+    background: #a36868;
+    margin: 10px;
+}
+
+.main__item3{ 
+    grid-area: main__item3;
+    background: #a36868;
+    margin: 10px;
+}
+
+.main__item4{ 
+    grid-area: main__item4;
+    background: #a36868;
+    margin: 10px;
+}
+
+.main__item5{ 
+    grid-area: main__item5;
+    background: #a36868;
+    margin: 10px;
+}
+
+.main__item6{ 
+    grid-area: main__item6;
+    background: #a36868;
+    margin: 10px;
+}
+
+.main__item1:hover, .main__item2:hover, .main__item3:hover, .main__item4:hover, .main__item5:hover, .main__item6:hover{
+    background: #00f;
+    cursor: pointer;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    display: grid;
+    grid-template-areas:
+    'main__item1 main__item2 main__item3'
+    'main__item4 main__item5 main__item6';
+    grid-gap: 30px;
+    padding: 0px;
+    margin: 0;
+}
+
+
+/*End Main styles*/
+
+
+/*Media quares*/
+
+
+
+/* End Media quares*/

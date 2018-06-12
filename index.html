@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thrilllist Chicago</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grid-container">
+    <header class="header">
+        <div class="header__nav d-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 336.4" class="main-logo">
+                <path d="M927 336.4V47h-23.7L908.1.5h91.8V47h-22.7v289.4H927zM319.8 48v87.7h12.1c12.6 0 18.8-13.6 18.8-38.3V86.3c0-24.7-6.3-38.3-18.8-38.3h-12.1zm6 129.9h-6v158H271V.5h63.3c42.5 0 62.8 27.1 62.8 81.9V96c0 34.1-9.1 58.1-26.9 71l28.4 169h-51.2l-21.6-158.1zm502.7 158h6.8c41.5 0 60.9-24.2 60.9-74.6v-34.4c0-35.4-6.3-56.7-36.2-81.4l-22.7-18.9c-14.5-12.1-18.4-24.2-18.4-41.7V79c0-21.3 1.4-32.5 15-32.5 13 0 15 11.6 15 32.5v32h44.4V73.2c0-51.4-15.9-72.7-56-72.7h-5.8c-41.1 0-59.9 23.7-59.9 74.6v14.1c0 35.4 4.8 57.2 35.3 81.4l23.7 18.9c15 11.6 17.4 24.2 17.4 41.7v25.7c0 21.8-1.9 33-15.5 33-14 0-15.5-11.6-15.5-32.5v-55.3h-45.4v61.1c-.1 51.4 16.3 72.7 56.9 72.7zm-130.9 0h50.2V0h-50.2v335.9zm-100 0h78.3l4.3-47h-32.4V0h-50.2v335.9zm-99.5 0h78.3l4.4-47h-32.4V0h-50.2v335.9zm-78.8 0H470V0h-50.7v335.9zm-397.1 0h50.2V46.5h27.1L94.7 0H0v46.5h22.2v289.4zm94.2 0h50.2v-160h26.6v159.9H243V0h-49.8v132.3h-26.6V0h-50.2v335.9z" fill-rule="evenodd" clip-rule="evenodd">
+                </path>
+            </svg>
+            <nav class="d-flex nav">
+                <li><a href="#" class="text-upper nav__link">Food &amp; Drink </a></li>
+                <li><a href="#" class="text-upper nav__link">Travel</a></li>
+                <li><a href="#" class="text-upper nav__link">Entertainment</a></li>
+                <li><a href="#" class="text-upper nav__link">Grilllist</a></li>
+                <li><a href="#" class="text-upper nav__link">All sections</a>
+                    <ul class="nav__sub">
+                        <li><a href="#" class="text-upper">All sections</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                   
+                </li>
+                <li><a href="#" class="text-upper nav__link">Cities</a></li>
+                <li><a href="#" class="text-upper nav__link">Video</a></li>
+            </nav>
+            <div class="header__input-wrap d-flex">
+                <input type="text" class="header__input" placeholder="Search ..." >
+                <input type="submit" class="header__search" value="🔍">
+            </div>
+            <div class="compass d-flex">
+                <i class="fa fa-compass text-center" aria-hidden="true"></i>
+                <p class="compass__text text-center text-upper">Near Me</p>
+            </div>
+            <div class="subscribe d-flex">
+                <i class="fa fa-envelope text-center" aria-hidden="true"></i>
+                <p class="subscribe__text text-center text-upper">Subscribe</p>
+            </div>
+        </div>
+        <button type="button" class="header__btn-down"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+        
+        
+    </header>
+  
+    <main class="main">
+        <div class="main__item1"></div>  
+        <div class="main__item2"></div>
+        <div class="main__item3"></div>
+        <div class="main__item4"></div>
+        <div class="main__item5"></div>
+        <div class="main__item6"></div>
+          
+    </main>  
+  <div class="item5">Footer</div>
+</div>
+<script>
+//    focus input
+    var inputHeader = document.querySelector('.header__input');
+    var inputSearch = document.querySelector('.header__search');
+    
+    inputSearch.addEventListener("click", function(){
+        inputHeader.focus()
+    }, false);
+//    end focus input
+//    Scroll button down
+    
+  (function() {
+  var btnScrollDown = document.querySelector('.header__btn-down');
+
+  function scrollDown() {
+    var windowCoords = document.documentElement.clientHeight;
+    (function scroll() {
+      if (window.pageYOffset < windowCoords) {
+        window.scrollBy(0, 1000);
+      }
+      if (window.pageYOffset > windowCoords) {
+        window.scrollTo(0, windowCoords);
+      }
+    })();
+  }
+
+  btnScrollDown.addEventListener('click', scrollDown);
+})();
+//    End Scroll button down
+    
+    
+</script>
+</body>
+</html>
